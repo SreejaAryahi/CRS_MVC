@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+   background-image: url('https://hatenotecnologia.com.br/wp-content/uploads/2019/09/img_05-2-1536x864.jpg');
+      background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-position: center center;
+
+    margin: 0;
+
+    padding: 0;
+  }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  align-items: start; /* Aligns items at the start of each cell */
+  
+}
+
+h1 {
+  grid-column: span 1; /* Span all columns in the row */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
